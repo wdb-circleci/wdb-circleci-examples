@@ -26,3 +26,12 @@
 
 - https://github.com/wdb-circleci/wdb-circleci-react
 - https://github.com/wdb-circleci/wdb-circleci-rails
+
+
+## 各リポジトリのCircleCI
+
+各リポジトリのCircleCIビルドはこちらから確認できます。
+
+- https://circleci.com/gh/wdb-circleci/wdb-circleci-examples
+- https://circleci.com/gh/wdb-circleci/wdb-circleci-react
+- https://circleci.com/gh/wdb-circleci/wdb-circleci-rails
