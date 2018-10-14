@@ -1,5 +1,7 @@
 # WDB Vol.107 特集1『実践CircleCI』サンプルコード
 
+[![CircleCI](https://circleci.com/gh/wdb-circleci/wdb-circleci-examples.svg?style=svg)](https://circleci.com/gh/wdb-circleci/wdb-circleci-examples)
+
 こちらは[WEB+DB PRESS Vol.107](https://gihyo.jp/magazine/wdpress/archive/2018/vol107)の特集1［Dockerもサポート！］実践CircleCI──ワークフローで複雑なCI/CDを自動化のサンプルコード用のリポジトリです。
 
 このリポジトでは、第2章『環境構築』、第3章『基本設定』で登場する設定コードを公開しています。
