@@ -1,7 +1,18 @@
-version: 2
+version: 2.1
 jobs:
   build:
     docker:
       - image: circleci/node:8.11.3
     steps:
-      - run: echo "hello world"
+      - run: echo "Running Step"
+
+workflows:
+  main:
+    jobs:
+      - build:
+          # buildジョブ実行前に実行されるステップ
+          pre-steps:
+            - run: echo "Pre Step"
+          # buildジョブ実行後に実行されるステップ
+          post-steps:
+            - run: echo "Post Step"

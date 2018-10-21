@@ -1,0 +1,37 @@
+version: 2
+jobs:
+  build:
+    docker:
+    - image: circleci/node:8.11.3
+    steps:
+    - run:
+        command: echo "Pre Step"
+    - run:
+        command: echo "Running Step"
+    - run:
+        command: echo "Post Step"
+workflows:
+  main:
+    jobs:
+    - build
+  version: 2
+
+# Original config.yml file:
+# version: 2.1
+# jobs:
+#   build:
+#     docker:
+#       - image: circleci\/node:8.11.3
+#     steps:
+#       - run: echo \"Running Step\"
+# 
+# workflows:
+#   main:
+#     jobs:
+#       - build:
+#           # build\u30B8\u30E7\u30D6\u5B9F\u884C\u524D\u306B\u5B9F\u884C\u3055\u308C\u308B\u30B9\u30C6\u30C3\u30D7
+#           pre-steps:
+#             - run: echo \"Pre Step\"
+#           # build\u30B8\u30E7\u30D6\u5B9F\u884C\u5F8C\u306B\u5B9F\u884C\u3055\u308C\u308B\u30B9\u30C6\u30C3\u30D7
+#           post-steps:
+#             - run: echo \"Post Step\"
