@@ -1,7 +1,21 @@
-version: 2
+version: 2.1
+commands:
+  greeting:
+    description: commandのサンプル
+    parameters:
+      # string（文字列）のパラメータ
+      to:
+        type: string
+        default: ""
+    steps:
+      # << パラメータ >> でパラメータを使用する
+      - run: echo Hello << parameters.to >>
 jobs:
   build:
     docker:
       - image: circleci/node:8.11.3
     steps:
-      - run: echo "hello world"
+      # stepsでcommandを使う
+      - greeting:
+          # パラメータをcommandに渡す
+          to: World

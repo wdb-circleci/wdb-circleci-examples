@@ -1,0 +1,36 @@
+version: 2
+jobs:
+  build:
+    docker:
+    - image: circleci/node:8.11.3
+    steps:
+    - run:
+        command: echo Hello World
+workflows:
+  version: 2
+  workflow:
+    jobs:
+    - build
+
+# Original config.yml file:
+# version: 2.1
+# commands:
+#   greeting:
+#     description: command\u306E\u30B5\u30F3\u30D7\u30EB
+#     parameters:
+#       # string\uFF08\u6587\u5B57\u5217\uFF09\u306E\u30D1\u30E9\u30E1\u30FC\u30BF
+#       to:
+#         type: string
+#         default: \"\"
+#     steps:
+#       # << \u30D1\u30E9\u30E1\u30FC\u30BF >> \u3067\u30D1\u30E9\u30E1\u30FC\u30BF\u3092\u4F7F\u7528\u3059\u308B
+#       - run: echo Hello << parameters.to >>
+# jobs:
+#   build:
+#     docker:
+#       - image: circleci\/node:8.11.3
+#     steps:
+#       # steps\u3067command\u3092\u4F7F\u3046
+#       - greeting:
+#           # \u30D1\u30E9\u30E1\u30FC\u30BF\u3092command\u306B\u6E21\u3059
+#           to: World
