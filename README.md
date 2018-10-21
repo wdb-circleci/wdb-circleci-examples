@@ -37,3 +37,11 @@
 - https://circleci.com/gh/wdb-circleci/wdb-circleci-examples
 - https://circleci.com/gh/wdb-circleci/wdb-circleci-react
 - https://circleci.com/gh/wdb-circleci/wdb-circleci-rails
+
+## お問い合わせについて
+
+本特集に関するお問い合わせについては、技術評論社のサイトからお問い合わせください。
+
+https://gihyo.jp/site/inquiry/book?ISBN=978-4-297-10172-5
+
+また、もし内容に誤りなどが見つかった場合は、[サポートページ：WEB+DB PRESS Vol.107](https://gihyo.jp/magazine/wdpress/archive/2018/vol107/support) にて情報をアップデートしていきますので、お手数ですがお問い合わせの前にはぜひ一度ご確認をお願いします。
