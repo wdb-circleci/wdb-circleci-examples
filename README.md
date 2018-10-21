@@ -12,13 +12,13 @@
 
 - [第2章-設定ファイル1](https://github.com/wdb-circleci/wdb-circleci-examples/tree/%E7%AC%AC2%E7%AB%A0-%E8%A8%AD%E5%AE%9A%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB1)
 - [第2章-設定ファイル2](https://github.com/wdb-circleci/wdb-circleci-examples/tree/%E7%AC%AC2%E7%AB%A0-%E8%A8%AD%E5%AE%9A%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB2)
-- [第2章-リスト4-executors](https://github.com/wdb-circleci/wdb-circleci-examples/tree/%E7%AC%AC2%E7%AB%A0-%E3%83%AA%E3%82%B9%E3%83%884-executors)
 
 ## 第3章で登場する設定コード
 
 - [第3章-リスト1-restore_cache/save_cache](https://github.com/wdb-circleci/wdb-circleci-examples/tree/%E7%AC%AC3%E7%AB%A0-%E3%83%AA%E3%82%B9%E3%83%881-restore_cache/save_cache)
 - [第3章-リスト2-persist_workspace/attach_to_workspace](https://github.com/wdb-circleci/wdb-circleci-examples/tree/%E7%AC%AC3%E7%AB%A0-%E3%83%AA%E3%82%B9%E3%83%882-persist_workspace/attach_to_workspace)
 - [第3章-リスト3-commands](https://github.com/wdb-circleci/wdb-circleci-examples/tree/%E7%AC%AC3%E7%AB%A0-%E3%83%AA%E3%82%B9%E3%83%883-commands)
+- [第3章-リスト4-executors](https://github.com/wdb-circleci/wdb-circleci-examples/tree/%E7%AC%AC3%E7%AB%A0-%E3%83%AA%E3%82%B9%E3%83%884-executors)
 - [第3章-リスト5-when/unless](https://github.com/wdb-circleci/wdb-circleci-examples/tree/%E7%AC%AC3%E7%AB%A0-%E3%83%AA%E3%82%B9%E3%83%885-when/unless)
 - [第3章-リスト6-pre_steps/post_steps](https://github.com/wdb-circleci/wdb-circleci-examples/tree/%E7%AC%AC3%E7%AB%A0-%E3%83%AA%E3%82%B9%E3%83%886-pre_steps/post_steps)
 
