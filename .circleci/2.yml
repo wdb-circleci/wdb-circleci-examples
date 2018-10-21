@@ -1,0 +1,63 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/repo
+    docker:
+    - image: circleci/node:8.11.3
+    steps:
+    - checkout
+    - run:
+        command: yarn install
+    - persist_to_workspace:
+        root: ~/repo
+        paths:
+        - node_modules/*
+  test:
+    working_directory: ~/repo
+    docker:
+    - image: circleci/node:8.11.3
+    steps:
+    - checkout
+    - attach_workspace:
+        at: ~/repo
+    - run:
+        command: yarn eslint -v
+workflows:
+  build_and_test:
+    jobs:
+    - build
+    - test:
+        requires:
+        - build
+  version: 2
+
+# Original config.yml file:
+# version: 2.1
+# jobs:
+#   build:
+#     working_directory: ~\/repo
+#     docker:
+#       - image: circleci\/node:8.11.3
+#     steps:
+#       - checkout
+#       - run: yarn install
+#       - persist_to_workspace:
+#           root: ~\/repo
+#           paths:
+#             - node_modules\/*
+#   test:
+#     working_directory: ~\/repo
+#     docker:
+#       - image: circleci\/node:8.11.3
+#     steps:
+#       - checkout
+#       - attach_workspace:
+#           at: ~\/repo
+#       - run: yarn eslint -v
+# workflows:
+#   build_and_test:
+#     jobs:
+#       - build
+#       - test:
+#           requires:
+#             - build

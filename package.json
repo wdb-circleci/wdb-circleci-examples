@@ -1,0 +1,11 @@
+{
+  "name": "wdb-circleci-examples",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/wdb-circleci/wdb-circleci-examples.git",
+  "author": "uraway <masato.uraway@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "eslint": "^5.6.1"
+  }
+}
