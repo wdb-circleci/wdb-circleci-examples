@@ -1,0 +1,12 @@
+{
+  "name": "wdb-circleci-examples",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/wdb-circleci/wdb-circleci-examples.git",
+  "author": "uraway <masato.uraway@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2"
+  }
+}
