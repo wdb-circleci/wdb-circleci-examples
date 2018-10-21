@@ -1,7 +1,10 @@
-version: 2
-jobs:
-  build:
+version: 2.1
+executors:
+  my_executor:
     docker:
       - image: circleci/node:8.11.3
+jobs:
+  build:
+    executor: my_executor
     steps:
-      - run: echo "hello world"
+      - run: node -v

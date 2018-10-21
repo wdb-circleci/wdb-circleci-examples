@@ -1,0 +1,25 @@
+version: 2
+jobs:
+  build:
+    docker:
+    - image: circleci/node:8.11.3
+    steps:
+    - run:
+        command: node -v
+workflows:
+  version: 2
+  workflow:
+    jobs:
+    - build
+
+# Original config.yml file:
+# version: 2.1
+# executors:
+#   my_executor:
+#     docker:
+#       - image: circleci\/node:8.11.3
+# jobs:
+#   build:
+#     executor: my_executor
+#     steps:
+#       - run: node -v
