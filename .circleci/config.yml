@@ -1,7 +1,25 @@
-version: 2
+version: 2.1
 jobs:
   build:
-    docker:
-      - image: circleci/node:8.11.3
+    parameters:
+      # 真偽値のパラメータ
+      preinstall-foo:
+        type: boolean
+        default: false
+    machine: true
     steps:
-      - run: echo "hello world"
+      - when:
+          condition: << parameters.preinstall-foo >>
+          steps:
+            - run: echo "fooがインストールされています"
+      - unless:
+          condition: << parameters.preinstall-foo >>
+          steps:
+            - run: echo "fooがインストールされていません"
+
+workflows:
+  main:
+    jobs:
+      - build:
+          # buildジョブに対してパラメータを渡す
+          preinstall-foo: true
